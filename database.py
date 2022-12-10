@@ -1,9 +1,9 @@
 import streamlit as st
 from deta import Deta
 
-KEY = st.secrets("DATA_KEY")
+KEY = st.secrets("DB_KEY")
 
-deta = Deta("a0rilpvt_kQbN234wh5ZUFpDA2VoEBzCYFfsULnV2")
+deta = Deta(KEY)
 db = deta.Base("cloudst")
                
 
